@@ -1,0 +1,53 @@
+override
+
+ref
+out
+static은 객체생성귀찮으니
+unsafe c++스타일
+
+속성 빌드 고급에 산술연산 체크 항상 확인
+
+interface IDimensions(사용자정의) 확인 디멘션 상속 디멘션은 사용자 정의 이름임 인터페이스 모호성에대해서 설명들음.(명시적으로 확실히 이름 익스플릿 해줘야함 interface가 여럿일경우 모호성해결)
+
+params 직접숫자입력하던거
+
+partial 분할클레스 구현. 
+
+조건문에 is 붙이는거
+
+if(a is dog) // 객체가 해당 형식에 해당하는지를 검사 반환형태는 bool
+
+as 붙이는거도
+
+형식 변환자 변환이 실패 할 경우 null반환
+mammal ap = new cat();
+
+Cat cat = ap as Cat;
+
+if(cat != null)
+{
+
+cat.sound3();
+
+}
+
+is as 를 찾아보기 검증용으로 쓰면됨
+
+
+sealed 는 클레스 상속불가 하게만드는것 클레스 앞에써도되고 퍼블릭후에 실드를 해서 함수를 막을수도잇다 public virtual선언된 다른 함수에 내껄 오버라이딩을하면 public sealed override void 함수이름();
+
+
+integerextension 클레스 중첩 확장 
+
+함수 인자값에 this를붙이면 3.ad() 이런식으로 확장가능
+
+abstract 클레스에 붙였을때 ?? 기억안남;;(아~~추상 클래스)
+
+
+
+arraylist<>
+queue<>
+stack<>
+hashtable<> 모두 템플릿이 있다.
+
+제너릭을 알아봅시다

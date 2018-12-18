@@ -1,0 +1,7 @@
+D:\C#\C-New-Class\FirstStudy\FirstStudy\bin\Debug\FirstStudy.exe.config
+D:\C#\C-New-Class\FirstStudy\FirstStudy\bin\Debug\FirstStudy.exe
+D:\C#\C-New-Class\FirstStudy\FirstStudy\bin\Debug\FirstStudy.pdb
+D:\C#\C-New-Class\FirstStudy\FirstStudy\obj\Debug\FirstStudy.csprojAssemblyReference.cache
+D:\C#\C-New-Class\FirstStudy\FirstStudy\obj\Debug\FirstStudy.csproj.CoreCompileInputs.cache
+D:\C#\C-New-Class\FirstStudy\FirstStudy\obj\Debug\FirstStudy.exe
+D:\C#\C-New-Class\FirstStudy\FirstStudy\obj\Debug\FirstStudy.pdb

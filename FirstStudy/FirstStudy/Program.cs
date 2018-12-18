@@ -66,10 +66,10 @@ namespace FirstStudy
             mainclass ap = new mainclass();
 
             // ap.prams(10, 20, 30, 40);
-            object a = 10;
+            //object a = 10;
             
-            if(a is int i)
-            Console.WriteLine(i);
+            //if(a is int i)
+            //Console.WriteLine(i);
             ap.Meow();
            
             

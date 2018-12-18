@@ -31,6 +31,11 @@ namespace FirstStudy
 
     class mainclass : Cat
     {
+
+        enum EUN
+        {
+            RE,TRY,PLAY
+        }
         public int p=0;
         void refer(ref int a)
         {
@@ -65,6 +70,8 @@ namespace FirstStudy
         {
             mainclass ap = new mainclass();
 
+
+            EUN e = (EUN)(new Random().Next(0, 3)); 
             // ap.prams(10, 20, 30, 40);
             //object a = 10;
             

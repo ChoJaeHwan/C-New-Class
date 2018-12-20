@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
 
     public float jumpSpeed = 10.0f;
     public float gravity = -20.0f;
-
+    public CameraControl MouseControl = null;
    public float yVelocity = 0.0f;
     // Use this for initialization
     void Start () {
@@ -22,8 +22,10 @@ public class PlayerController : MonoBehaviour {
             Debug.Log("애니메이터가 없음");
             return;
         }
-          
-	}
+
+        CameraControl MouseControl = gameObject.AddComponent<CameraControl>();
+        
+    }
  
 
     void Update()
@@ -58,5 +60,7 @@ public class PlayerController : MonoBehaviour {
         yVelocity += (gravity * Time.deltaTime);
         moveDirection.y = yVelocity;
         Character.Move(moveDirection * Time.deltaTime);
+
+        
     }
 }

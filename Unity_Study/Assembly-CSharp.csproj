@@ -64,6 +64,7 @@
     <Compile Include="Assets\Script\Bomb.cs" />
     <Compile Include="Assets\Script\CameraControl.cs" />
     <Compile Include="Assets\Script\FireBall.cs" />
+    <Compile Include="Assets\Script\FSM_NPC.cs" />
     <Compile Include="Assets\Script\PlayerController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/C#Class/C-New-Class/Unity_Study/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

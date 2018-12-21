@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour {
             return;
         }
 
-        MouseControl = gameObject.AddComponent<CameraControl>();
+   //     MouseControl = gameObject.AddComponent<CameraControl>();
         
     }
  

@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 862726}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -326,7 +326,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.46, z: 0}
+  m_Center: {x: 0, y: 1.14, z: 0}
 --- !u!54 &403442242
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -342,6 +342,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &403442243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 403442236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449005fe1f02b1e42b796cabf526c581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 403442239}
+  fireObect: {fileID: 0}
+  forwardPower: 20
+  upPower: 1
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,13 +429,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.037812356, y: 0.074929066, z: 0.040853485, w: 0.9956339}
-  m_LocalPosition: {x: 0, y: 1.85, z: -0.56}
+  m_LocalRotation: {x: -0.039622054, y: 0.07398805, z: 0.016646285, w: 0.99633265}
+  m_LocalPosition: {x: 0, y: 1.22, z: -1.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 403442239}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: -4.67, y: 8.43, z: 4.355}
+  m_LocalEulerAnglesHint: {x: -4.67, y: 8.43, z: 1.57}
 --- !u!114 &534669906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +519,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 7bd05d05187b41349877f284746d6c69, type: 2}
+    - target: {fileID: 100104, guid: a7f154e5db3d471449fde5f25e4ffb66, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7f154e5db3d471449fde5f25e4ffb66, type: 3}
   m_IsPrefabAsset: 0

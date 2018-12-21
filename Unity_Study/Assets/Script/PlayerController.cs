@@ -34,9 +34,9 @@ public class PlayerController : MonoBehaviour {
         {
             player.Play("Run");
         }
-        else if(Input.GetButton("Jump"))
+        else if(Input.GetButtonDown("Jump"))
         {
-            player.Play("jump");
+            player.Play("Attack");
 
         }
         else
@@ -54,8 +54,8 @@ public class PlayerController : MonoBehaviour {
         if (Character.isGrounded == true)
             yVelocity = 0.0f;
 
-        if (Input.GetButtonDown("Jump"))
-        { yVelocity = jumpSpeed; }
+       // if (Input.GetButtonDown("Jump"))
+        //{ yVelocity = jumpSpeed; }
 
         yVelocity += (gravity * Time.deltaTime);
         moveDirection.y = yVelocity;

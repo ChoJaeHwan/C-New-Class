@@ -23,7 +23,8 @@ public class FSM_NPC : MonoBehaviour {
     public float moveSpeed = 5.0f;
     public float rotationSpeed = 10.0f;
     public float attackRange = 3.5f;
-    public float attackStateMaxTime = 2.0f;
+    public float attackStateMaxTime = 2.0f;
+
     float stateTime = 0.0f;
     public float idleStateMaxTime = 2.0f;
 
@@ -45,8 +46,8 @@ public class FSM_NPC : MonoBehaviour {
     {
         if (!anim)
         {
-            anim["Idle"].speed = 3.0f;
-            anim.Play("Idle");
+           // anim["Idle"].speed = 3.0f;
+           // anim.Play("Idle");
         }
     }
     // Use this for initialization
@@ -90,7 +91,7 @@ public class FSM_NPC : MonoBehaviour {
                 {
                     //      anim["Run"].speed = 2.0f;
                        // anim.CrossFade("Run");
-                    anime.Play("Run");
+                  //  anime.Play("Run");
                     Debug.Log("달린다");
                     float distance = (target.position - transform.position).magnitude;
                     if (distance < attackRange)
@@ -122,9 +123,10 @@ public class FSM_NPC : MonoBehaviour {
                         //  anim["Attack"].speed = -0.5f;
                         //  anim["Attack"].time = anim["Attack"].length;
                         // anim.Play( "Attack" );
-                        anime.Play("Attack");
+                      //  anime.Play("Attack");
                         Debug.Log("어택중");
-                    }                    float distance = (target.position - transform.position).magnitude;
+                    }
+                    float distance = (target.position - transform.position).magnitude;
                     if (distance > attackRange)
                     {
                         enemyState = ENEMYSTATE.IDLE;

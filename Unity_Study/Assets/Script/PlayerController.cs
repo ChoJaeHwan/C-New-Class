@@ -32,7 +32,8 @@ public class PlayerController : MonoBehaviour {
     {
         if(Input.GetKey("up")||Input.GetKey("down"))
         {
-            player.Play("Run");
+            player.SetBool("Move", true);
+            //player.Play("Run");
         }
         else if(Input.GetButtonDown("Jump"))
         {
@@ -41,7 +42,8 @@ public class PlayerController : MonoBehaviour {
         }
         else
         {
-            player.Play("Idle");
+            player.SetBool("Move", false);
+            //player.Play("Idle");
 
         }
         

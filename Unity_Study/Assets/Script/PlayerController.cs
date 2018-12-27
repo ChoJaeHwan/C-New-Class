@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour {
         }
         else if(Input.GetButtonDown("Jump"))
         {
-            player.Play("Attack");
+            player.SetTrigger("Attack");
 
         }
         else
